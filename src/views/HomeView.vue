@@ -1,5 +1,6 @@
 <script setup>
   import {useFlash} from "@/composables/useFlash";
+  import {state} from "@/stores/quizStore";
 
   let {flash} = useFlash();
 </script>
@@ -53,6 +54,7 @@ export default{
   <main>
     <TheWelcome />
     <h1>{{ message }}</h1>
+    <h5>{{ state.name }}</h5>
     <button @click="flash('Success!','Hello World')">Click</button>
   </main>
 </template>
