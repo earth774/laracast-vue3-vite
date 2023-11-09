@@ -8,6 +8,8 @@ import router from './router'
 const app = createApp(App)
 const pinia = createPinia()
 
+// import './assets/index.css'
+
 app.use(pinia)
 app.use(router)
 

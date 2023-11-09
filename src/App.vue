@@ -14,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
         <RouterLink to="/counter_pinia">Counter Pinia</RouterLink>
+        <RouterLink to="/team">Team</RouterLink>
       </nav>
     </div>
   </header>
