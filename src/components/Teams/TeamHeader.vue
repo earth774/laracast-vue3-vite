@@ -9,6 +9,7 @@
     <div>
         {{ team.spots }}
       <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded disabled:bg-gray-400"
+              @click="$emit('add')"
               :disabled="team.members.length === team.spots">Add Member ({{ team.spots - team.members.length }} Spots Left)</button>
     </div>
 
